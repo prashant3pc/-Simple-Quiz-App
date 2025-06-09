@@ -95,7 +95,7 @@
             const questionElement = document.getElementById("question");
             const optionsElement = document.getElementById("options");
             
-            optionsElement.innerHTML = ""; // Clear previous options
+            optionsElement.innerHTML = "";
 
             const currentQuestion = questions[currentQuestionIndex];
             questionElement.innerText = currentQuestion.question;
@@ -121,7 +121,6 @@
 
             document.getElementById("score").innerText = `Score: ${score}`;
 
-            // Disable all options after answering
             document.querySelectorAll(".option").forEach(btn => btn.disabled = true);
         }
 
